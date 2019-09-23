@@ -8,7 +8,7 @@ export default class PropAtelier extends Component {
 
     }
     componentDidMount() {
-        axios.get("http://localhost:8080/afficherPart/")
+        axios.get("https://polar-reef-70255.herokuapp.com/afficherPart/")
             .then(response => {
                 console.log('emprenter ==== ', response)
                 this.setState({ profil: response.data });
@@ -38,7 +38,7 @@ export default class PropAtelier extends Component {
 
                         return <tr key={obj._id}>
                             <td>
-                                <img width="150px" height="50px" src={'http://localhost:8080/newArticleImage/' + obj.image} alt="pdp" />
+                                <img width="150px" height="50px" src={'https://polar-reef-70255.herokuapp.com/newArticleImage/' + obj.image} alt="pdp" />
                             </td>
                             <td>{obj.titre}</td>
                             <td>{obj.nom}</td>
@@ -52,8 +52,8 @@ export default class PropAtelier extends Component {
                                 <center>
                                     {obj.visib === true ? (<button className="deconex" onClick={(e) => {
                                         e.preventDefault()
-                                        axios.get("http://localhost:8080/cacherAtl/" + obj._id).then(res => {
-                                            axios.get("http://localhost:8080/afficher/"+localStorage.getItem('id')).then(res => {
+                                        axios.get("https://polar-reef-70255.herokuapp.com/cacherAtl/" + obj._id).then(res => {
+                                            axios.get("https://polar-reef-70255.herokuapp.com/afficher/"+localStorage.getItem('id')).then(res => {
                                                 console.log(res.data)
                                                 this.setState({ profil: res.data })
                                             })
@@ -62,8 +62,8 @@ export default class PropAtelier extends Component {
                                     }}>Desactiver</button>) : (<button className="deconex" onClick={(e) => {
                                         e.preventDefault()
                                         console.log(obj._id)
-                                        axios.get("http://localhost:8080/affichAtl/" + obj._id).then(res => {
-                                            axios.get('http://localhost:8080/afficher/' + localStorage.getItem('id')).then(res => {
+                                        axios.get("https://polar-reef-70255.herokuapp.com/affichAtl/" + obj._id).then(res => {
+                                            axios.get('https://polar-reef-70255.herokuapp.com/afficher/' + localStorage.getItem('id')).then(res => {
                                                 console.log(res.data)
                                                 this.setState({ profil: res.data })
                                             })

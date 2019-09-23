@@ -28,7 +28,7 @@ export default class Home extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8080/newArticle')
+        axios.get('https://polar-reef-70255.herokuapp.com/newArticle')
             .then(response => {
                 this.setState({ profil: response.data });
                 console.log('profil: ', this.state.profil);
@@ -49,7 +49,7 @@ export default class Home extends Component {
                                 <div id="listelivre">
                                     <div>
                                         <div>
-                                            <img class="" id="sary" src={'http://localhost:8080/newArticleImage/' + obj.image} alt="Card" />
+                                            <img class="" id="sary" src={'https://polar-reef-70255.herokuapp.com/newArticleImage/' + obj.image} alt="Card" />
                                                 <div className="row">
                                                     <div className="col-md-4">
                                                     <span><b id="b1">Titre </b>{obj.titre}</span>
@@ -87,7 +87,7 @@ export default class Home extends Component {
                                                                             <button className="btn btn-primary"
                                                                                 onClick={(e) => {
                                                                                     e.preventDefault()
-                                                                                    axios.post("http://localhost:8080/achatLivre/" + obj._id, {
+                                                                                    axios.post("https://polar-reef-70255.herokuapp.com/achatLivre/" + obj._id, {
                                                                                         nom: this.state.nom,
                                                                                         prenom: this.state.prenom,
                                                                                         phone: this.state.phone,
@@ -124,7 +124,7 @@ export default class Home extends Component {
                                                                             <button
                                                                                 onClick={(e) => {
                                                                                     e.preventDefault()
-                                                                                    axios.post("http://localhost:8080/particulier/" + obj._id, {
+                                                                                    axios.post("https://polar-reef-70255.herokuapp.com/particulier/" + obj._id, {
                                                                                         nom: this.state.nom,
                                                                                         prenom: this.state.prenom,
                                                                                         phone: this.state.phone,
@@ -133,7 +133,7 @@ export default class Home extends Component {
                                                                                         email: this.state.email
 
                                                                                     }).then(res => {
-                                                                                        axios.get("http://localhost:8080/newArticle").then(res => {
+                                                                                        axios.get("https://polar-reef-70255.herokuapp.com/newArticle").then(res => {
 
                                                                                             this.setState({ profil: res.data })
                                                                                         })
@@ -178,7 +178,7 @@ export default class Home extends Component {
 
 //     }
 //     componentDidMount() {
-//         axios.get('http://localhost:8080/newArticle')
+//         axios.get('https://polar-reef-70255.herokuapp.com/newArticle')
 //             .then(response => {
 //                 console.log('i am a response', response)
 //                 this.setState({ produit: response.data });
@@ -204,7 +204,7 @@ export default class Home extends Component {
 //                                         <div class="card-horizontal">
 //                                             <div className="row">
 //                                                 <div className="col-md-6">
-//                                                     <img class="" id="sary" src={'http://localhost:8080/newArticleImage/' + obj.image} alt="Card" />
+//                                                     <img class="" id="sary" src={'https://polar-reef-70255.herokuapp.com/newArticleImage/' + obj.image} alt="Card" />
 //                                                 </div>
 //                                                 <div className="col-md-6">
 //                                                     <div className="card-body">
@@ -245,7 +245,7 @@ export default class Home extends Component {
 //                                                             <button
 //                                                                             onClick={(e) => {
 //                                                                                 e.preventDefault()
-//                                                                                 axios.post("http://localhost:8080/particulier/" + obj._id, {
+//                                                                                 axios.post("https://polar-reef-70255.herokuapp.com/particulier/" + obj._id, {
 //                                                                                     nom: this.state.nom,
 //                                                                                     prenom: this.state.prenom,
 //                                                                                     phone: this.state.phone,
@@ -255,7 +255,7 @@ export default class Home extends Component {
 //                                                                                     email: this.state.email
 
 //                                                                                 }).then(res => {
-//                                                                                     axios.get("http://localhost:8080/newArticle").then(res => {
+//                                                                                     axios.get("https://polar-reef-70255.herokuapp.com/newArticle").then(res => {
 
 //                                                                                         this.setState({ profil: res.data })
 //                                                                                     })

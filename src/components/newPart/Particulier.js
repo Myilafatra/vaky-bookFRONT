@@ -29,7 +29,7 @@ handleUploadImage(ev) {
   data.append('email', this.state.email);
   data.append('phone', this.state.phone)
 
-  fetch('http://localhost:8080/particulier/', {
+  fetch('https://polar-reef-70255.herokuapp.com/particulier/', {
     method: 'POST',
     body: data,
   }).then((response) => {

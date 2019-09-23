@@ -29,7 +29,7 @@ export default class Home extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8080/newArticle')
+        axios.get('https://polar-reef-70255.herokuapp.com/newArticle')
             .then(response => {
                 this.setState({ profil: response.data });
                 console.log('profil: ', this.state.profil);

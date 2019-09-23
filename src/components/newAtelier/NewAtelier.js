@@ -42,12 +42,12 @@ class NewAtelier extends React.Component {
     data.append('idUser', localStorage.id);
     data.append('description', this.state.description)
 
-    fetch('http://localhost:8080/newArticle/', {
+    fetch('https://polar-reef-70255.herokuapp.com/newArticle/', {
       method: 'POST',
       body: data,
     }).then((response) => {
       response.json().then((body) => {
-        this.setState({ image: `http://localhost:8080/newArticle/${body.image}` });
+        this.setState({ image: `https://polar-reef-70255.herokuapp.com/newArticle/${body.image}` });
         console.log('ity ilay body.image', body.image);
 
       });

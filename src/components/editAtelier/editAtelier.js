@@ -27,7 +27,7 @@ class EditAtelier extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8080/modifierAtl/'+this.props.match.params.id)
+    axios.get('https://polar-reef-70255.herokuapp.com/modifierAtl/'+this.props.match.params.id)
         .then(response => {
               console.log("donné à modifier" , response.data)
             this.setState({
@@ -57,7 +57,7 @@ class EditAtelier extends React.Component {
     data.append('idUser', localStorage.id);
     data.append('description', this.state.description)
 
-    fetch('http://localhost:8080/putArticle/' + this.props.match.params.id, {
+    fetch('https://polar-reef-70255.herokuapp.com/putArticle/' + this.props.match.params.id, {
       method: 'PUT',
       body: data,
     }).then((response) => {
@@ -66,7 +66,7 @@ class EditAtelier extends React.Component {
 
 
       response.json().then((body) => {
-        this.setState({ image: `http://localhost:8080/newArticle/${body.image}` });
+        this.setState({ image: `https://polar-reef-70255.herokuapp.com/newArticle/${body.image}` });
         console.log('ity ilay body.image', body.image);
 
       });
