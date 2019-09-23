@@ -1,0 +1,257 @@
+#navbar{
+        background-color: #dc5c7f  !important;
+}
+.text-white {
+  background-color: #486f6e;
+  
+}
+#image{
+    height: 500px;
+  }
+.title{
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: chocolate;
+  text-align: center;
+}
+#slidee {
+  z-index: -1 !important;
+}
+#nav {
+  z-index: 1 !important;
+}
+.author{
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: rgb(54, 27, 8);
+  text-align: center;
+}
+#listelivre {
+  border: 1px solid lightgray !important;
+  border-radius: 10px;
+}
+  #sary{
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 5px;
+  }
+  #sary1{
+    width: 80% !important;
+    height: 350px !important;
+    border-radius: 5px;
+  }
+ 
+  #nav{
+    background-color: #dc5c7f  !important;
+    height: 130px;
+  }
+  #connex{
+    color: #fafafa;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+  #connexA{
+    color: #fafafa;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+  .page-footer{
+    background-color: #dc5c7f !important;
+  }
+  #file{
+    width: 500px;
+    background-color: #fdfafa  !important;
+    border-radius: 15px;
+  }
+  #register{
+    background-color: #e0e0e0  !important;
+    border-radius: 15px;
+  }
+  #popup{
+    border: 2px solid  lightgray !important;
+    background-color: lightgray;
+    border-radius: 15px;
+    width:500px;
+    height: auto;
+    padding: 50px 50px 50px 50px;
+  }
+  .input-acheter {
+    padding-left: 10px !important;
+    font-weight: bold
+  }
+  #navbarliste{
+    text-decoration: none !important;
+    color: white !important;
+    font-size: 25px;
+    padding-left: 20px;
+    font-weight: bolder;
+  }
+  #navbarliste:hover {
+    color: #f096ae !important;
+    font-weight: bold;
+  }
+  /* .input{
+    width: 300px !important;
+    padding-left: 50px !important;
+  } */
+
+.more {
+  position:relative;
+  top: 1.6em;
+}
+.footercard{
+  padding-bottom: 20px !important;
+}
+.more-text {
+  position:absolute;
+  bottom:0.5em;
+}
+.moins, 
+.hidetext,
+.more-text:focus .plus{
+  display:none;
+}
+.more-text:focus +.hidetext,
+.more-text:focus .moins{
+  display:block;
+  cursor: pointer;
+}
+.input1 {
+  width: 400px;
+  height: 45px;
+  margin-top: 10px;
+  padding-left: 5px;
+  border-radius: 8px;
+  border-color: #dc5c7f !important;
+}
+.more-text:focus {
+  pointer-events:none;
+}
+  #afficher {
+    display: none;
+  }
+  #acheter {
+    display: none;
+  }
+  .coock{
+    font-size: 5em;
+    color: #486f6e ; 
+    font-family:'Roboto';
+    font-weight:400;
+    font-style: italic;
+    padding-left: 150px;
+  
+  }
+  .btn1{
+    color: white !important;
+    background-color:#486f6e !important;
+    border-radius: 15px!important;
+  }
+  #affichage{
+    width: 1200px;
+  }
+  .nav{
+    width: 150px;
+    /* background-color: #d05c62!important; */
+    padding-top: 50px;
+  }
+  .card1{
+    border: 2px solid #486f6e ;
+    border-radius: 15px;
+  }
+  .titre1{
+    text-align: center;
+    color:#486f6e ;
+    font-family:'Roboto';
+    font-weight:400;
+  }
+  .titre2{
+    text-align: center;
+    font-family: Verdana, sans-serif; 
+    font-size: 18px;
+    height:3.5em;
+    overflow:hidden;
+    text-overflow: ellipsis; 
+  }
+#titre{
+  color: #486f6e ;
+  font-family:'Roboto';
+  font-weight:400;
+}
+  .titre3{
+    text-align: center;
+    font-family: Verdana, sans-serif; 
+    font-size: 22px;
+    color:#6b2a0a;
+  }
+  #pers{
+    color: black;
+    font-size: 22px;
+  }
+  /* #navbar {
+    padding-left: 100px
+  } */
+  #ajoutcuisinier {
+    display: none;
+  }
+  #tableget {
+    display: none;
+  }
+  #botton {
+    color: white !important;
+    width: 100%;
+    font-size: 18px !important
+  }
+  #spannav{
+    text-align: center !;
+  }
+  .deconex{
+    color: white !important;
+    background-color: #486f6e  !important;
+  }
+  #me{
+    font-size: 1.2rem;
+  }
+  #font{
+    font-size: 2rem !important;
+  }
+  #h2{
+    margin-top: 20px;
+    margin-left: 100px;
+    color: #f2f8f8 ;
+    font-family:'Roboto';
+    font-weight:600;
+    text-align: center;
+  }
+  #verdana{
+    font-family: Verdana, sans-serif; 
+    font-size: 1.2rem;
+  }
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+#b{
+  font-size: 20px !important;
+  padding-left: 10px;
+  color: #dc5c7f !important;
+}
+#b1 {
+  font-size: 23px;
+  padding-left: 10px;
+}
+#b2 {
+  padding-left: 10px;
+}
+#plusmoins {
+  text-decoration: none;
+  color: #dc5c7f !important;
+}
+#description {                                                              
+    width : 100%;
+    white-space: nowrap;
+    overflow : hidden;
+    text-overflow : ellipsis;                                                                                                                                                   
+}
